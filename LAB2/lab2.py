@@ -9,8 +9,15 @@ def factorial(number):
 def fibonacci(number, number_sequence = [0,1]):
     last_number = len(number_sequence) - 1
 
-    if len(number_sequence) > number:
-        return number_sequence[number]
+    if number == 0:
+        return 0
+    if number == 1:
+        return number_sequence[0]
+    if number == 2:
+        return number_sequence[1]
+
+    if len(number_sequence) == number:
+        return number_sequence[number-1]
 
     new_number = number_sequence[last_number] + number_sequence[last_number - 1]
     number_sequence.append(new_number)
