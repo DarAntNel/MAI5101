@@ -1,0 +1,12 @@
+requires python 3.13
+
+In this code parses a txt file containing graph,
+parses number of vertices and number of edges,
+We read the start vertex and all edges into a list and initializes an adjacency list.
+Then uses Dijkstra's algorithm to find the shortest distance, and keeps track of the best known distances and path.
+Priority queue is used to go to the next closest node to explore
+if going through the current node gives a shorter path to a neighbor, update that neighbor’s distance and predecessor, and push it back into the heap.
+the paths are then reconstructed, Starting from any end node, hop backwards via the prev links until you reach the start.
+The list is reversed to get the path in the correct order.
+We then print the output
+
