@@ -1,13 +1,6 @@
-# You are given a list of n points in a 2D coordinate plane. Your task is to find the pair of
-# points that are closest to each other in terms of Euclidean distance. Your solution must
-# use a divide-and-conquer strategy to achieve O(n log n) time complexity.
-
-
-# read input from a file .txt
-
-
-# Print the minimum distance and the coordinates of the closest pair to the terminal or
-# console. Round the distance to 4 decimal places
+# Daryl Nelson
+# 1021215
+# Python 3.13
 
 import math
 
@@ -62,7 +55,7 @@ def closestPair(points_x, points_y = None):
 
 all_points = []
 
-with open("test.txt", 'r') as f:
+with open("points.txt", 'r') as f:
     for line in f:
         point = [int(num) for num in line.strip().split()]
         all_points.append(point)
