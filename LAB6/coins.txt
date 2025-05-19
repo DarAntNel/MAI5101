@@ -1,0 +1,2 @@
+Denominations:	1	2	5
+Amount:	11
