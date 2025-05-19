@@ -1,3 +1,7 @@
+# Daryl Nelson
+# 1021215
+# Python 3.13
+
 def minCoinChange(denominations, amount):
     current_combination = []
     track_key = len(denominations) - 1 if len(denominations) > 1 else 0
