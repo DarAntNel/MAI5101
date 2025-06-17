@@ -1,0 +1,15 @@
+requires python 3.13
+
+The code finds the maximum number of student to company pairs that match their preferences it parses a file called input.txt
+
+The first part lists student preferences and the second part lists company preferences
+
+It constructs a flow network
+
+Source connects to each student, each student connects to companies they want and that also want them back
+
+Each company connects to the sink and it uses the Edmond-Karp algorithm to find maximum matching in the network
+
+We print the maximum matching and the pairs of students and companies
+
+Run with command "python lab7.py"
