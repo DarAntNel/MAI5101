@@ -92,10 +92,11 @@ def main(filename):
             if adj[c][s] > 0:
                 matching.append((s, c))
 
-    print(f"Maximum matching: {max_flow}\n")
-    print("Matched Pairs:")
-    for s, c in matching:
-        print(f"{s} - {c}")
+    with open('output.txt', 'w') as f:
+        f.write(f"Maximum matching: {max_flow}\n\n")
+        f.write("Matched Pairs:\n")
+        for s, c in matching:
+            f.write(f"{s} - {c}\n")
 
 
 if __name__ == "__main__":
