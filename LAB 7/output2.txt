@@ -1,0 +1,5 @@
+Maximum matching: 2
+
+Matched Pairs:
+s2 - c1
+s4 - c2
